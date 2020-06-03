@@ -22,7 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <List list={arr}/>
+      <List items={arr}/>
     </div>
   );
 }

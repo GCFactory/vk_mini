@@ -10,7 +10,7 @@ class List extends React.Component{
 
     render()
     {
-        let listH = this.props.list.map((value, key) => (<li key={key}>{value}</li>));
+        let listH = this.props.items.map((value, key) => (<li key={key}>{value}</li>));
         return <ul onClick={this.onClick.bind(this)}>{listH}</ul>;
     }
 
@@ -21,7 +21,7 @@ class List extends React.Component{
 }
 
 List.propTypes = {
-    list: PropTypes.arrayOf(PropTypes.any).isRequired
+    items: PropTypes.arrayOf(PropTypes.any).isRequired
 }
 
 export default List;
